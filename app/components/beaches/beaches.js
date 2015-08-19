@@ -7,7 +7,7 @@ angular.module('projectBeaches.beachesList', ['ngRoute'])
     templateUrl: 'components/beaches/beaches.html',
     controller: 'BeachesList'
   });  
-  
+
   $routeProvider.when('/beach/random', {
     templateUrl: 'components/beaches/beach.html',
     controller: 'BeachRandom'
@@ -39,21 +39,13 @@ angular.module('projectBeaches.beachesList', ['ngRoute'])
     $scope.beach = Beaches.get($routeParams.id);
     $scope.currentImage = $scope.beach.images[0];
 
-
-
     $scope.setCurrentImage = function(image){
         $scope.currentImage = image;
     }
 
 }])
 
-.controller('BeachRandom', ['Beaches','$scope', function(Beaches, $scope) {
-
+.controller('BeachRandom', ['Beaches','$scope','$location', function(Beaches, $scope,$location) {
     $scope.beach = Beaches.getRandom();
-    $scope.currentImage = $scope.beach.images[0];
-
-    $scope.setCurrentImage = function(image){
-        $scope.currentImage = image;
-    }
-
+    $location.path('beach/'+$scope.beach.id);
 }]);
