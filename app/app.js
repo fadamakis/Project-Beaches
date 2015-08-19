@@ -4,7 +4,8 @@
 angular.module('projectBeaches', [
   'ngRoute',
   'projectBeaches.about',
-  'projectBeaches.beachesList'
+  'projectBeaches.beachesList',
+  'ngMap'
   ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/beaches'});

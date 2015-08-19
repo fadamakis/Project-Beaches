@@ -11,6 +11,11 @@
     <div class="row">
         <div class="col-md-8">
             <img class="img-responsive" src="images/{{ currentImage }}.jpg" alt="">
+
+            <br>
+            <div map-lazy-load="http://maps.google.com/maps/api/js">
+              <map center="{{ beach.latitude }},{{ beach.longitude }}" zoom="13"></map>
+            </div>
         </div>
         <div class="col-md-4">
             <h3>{{ beach.title }}</h3>
