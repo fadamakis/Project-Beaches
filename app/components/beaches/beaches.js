@@ -2,22 +2,6 @@
 
 angular.module('projectBeaches.beachesList', ['ngRoute'])
 
-.config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/beaches', {
-    templateUrl: 'components/beaches/beaches.html',
-    controller: 'BeachesList'
-  });  
-
-  $routeProvider.when('/beach/random', {
-    templateUrl: 'components/beaches/beach.html',
-    controller: 'BeachRandom'
-  });
-  $routeProvider.when('/beach/:id', {
-    templateUrl: 'components/beaches/beach.html',
-    controller: 'BeachPage'
-  }); 
-}])
-
 .controller('BeachesList', ['Beaches', '$scope', function(Beaches, $scope) {
 
     var data = Beaches.getBeaches();
