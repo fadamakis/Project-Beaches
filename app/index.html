@@ -13,24 +13,12 @@
 </head>
 <body>
 
-    <ng-include src="'partials/header.html'"></ng-include>
+  <ng-include src="'partials/header.html'"></ng-include>
 
     <div ng-view></div>
 
-    <ng-include src="'partials/footer.html'"></ng-include>
+  <ng-include src="'partials/footer.html'"></ng-include>
 
-
-
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="bower_components/ngmap/build/scripts/ng-map.js"></script>
-  <script src="app.js"></script>
-  <script src="components/beaches/beaches.js"></script>
-  <script src="components/beaches/beach.model.js"></script>
-  <script src="components/beaches/beaches.service.js"></script>
-
-  <script src="components/about/about.js"></script>
-  <script src="components/filters/filters.js"></script>
-
+  <script src="dist/bundle.js"></script>
 </body>
 </html>
