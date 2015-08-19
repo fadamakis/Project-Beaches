@@ -5,8 +5,10 @@ angular.module('projectBeaches', [
   'ngRoute',
   'projectBeaches.view1',
   'projectBeaches.view2',
+  'projectBeaches.about',
+  'projectBeaches.beachesList',
   'projectBeaches.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/view1'});
+  $routeProvider.otherwise({redirectTo: '/beaches'});
 }]);

@@ -1,0 +1,23 @@
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Popular beaches in Heraklion, Crete
+                <small></small>
+            </h1>
+        </div>
+    </div>
+
+    <div class="row" ng-repeat="rows in beaches">
+        <div class="col-md-6 portfolio-item" ng-repeat="beach in rows">
+            <a href="#/beach/{{beach.id}}">
+                <img class="img-responsive" ng-src="images/{{ beach.images[0] }}.jpg" alt="">
+            </a>
+            <h3>
+                <a href="#/beach/{{beach.id}}">{{ beach.title }}</a>
+            </h3>
+            <p>{{ beach.description | truncate: 170 }}</p>
+        </div>
+    </div>
+
+</div>  
