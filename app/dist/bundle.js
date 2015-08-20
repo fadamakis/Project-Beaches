@@ -32270,7 +32270,7 @@ angular.module('projectBeaches')
                     rating: "1",
                     longitude: "25.0181429",
                     latitude: "35.4059561",
-                    images: ['pelagia1','pelagia2','pelagia3','pelagia4'],
+                    images: ['agia-pelagia1','agia-pelagia2','agia-pelagia3','agia-pelagia4'],
                     description: "Agia Pelagia (Santa Pelagia) is located 21km west of Heraklion, on the west side of a long peninsula, which has many small coves with beautiful beaches. Agia Pelagia, initially a small and picturesque village built from the residents of Achlada village, transformed into a very popular tourist resort with many hotels, restaurants, cafes, bars, internet cafés, ATMs, taxi, etc., that is connected with regular bus services to Heraklion.The main beach of the settlement is a long and narrow beach with sand and greenish waters. The Turks named the Gulf of Agia Pelagia in Tsanak Limani, because the area reminded them of a plate (tsanak = plate). Indeed, the water is almost always calm here and the bay forms a tranquil harbor. The beach offers many options for watersports, diving,umbrellas, food and accommodation. In recent years thousands of locals have fun daily in the beach bars of Agia Pelagia and choose its beach for swimming. Unfortunately, the beach is very narrow and the sunbeds have occupied almost the entire area, leaving little room to put someone's towel."
                 }));
 
