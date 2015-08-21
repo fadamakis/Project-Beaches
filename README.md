@@ -25,3 +25,7 @@ Run simple tests with protactor
 ```
 protractor e2e-tests/protractor.conf.js
 ```
+
+### Demo
+
+[http://fadamakis.github.io/Project-Beaches/app/](http://fadamakis.github.io/Project-Beaches/app/)
